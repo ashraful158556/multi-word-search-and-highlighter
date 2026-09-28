@@ -1,0 +1,42 @@
+/* Normal webpage text */
+.mwh-highlight {
+  background: #fff176 !important;
+  color: #111 !important;
+  border-radius: 2px !important;
+  box-shadow: 0 0 0 1px rgba(180, 150, 0, .15);
+}
+
+/* Input / textarea mirror */
+.mwh-field-wrap {
+  position: relative !important;
+  display: inline-block !important;
+  vertical-align: top !important;
+}
+
+.mwh-field-wrap > .mwh-input-overlay {
+  position: absolute !important;
+  z-index: 2147483646 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  color: #111 !important;
+  background: transparent !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.mwh-input-overlay .mwh-field-match {
+  background: #fff176 !important;
+  color: #111 !important;
+  border-radius: 2px !important;
+}
+
+.mwh-field-wrap > input.mwh-transparent-text,
+.mwh-field-wrap > textarea.mwh-transparent-text {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  caret-color: #111 !important;
+}

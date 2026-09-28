@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Multi Word Highlighter",
+  "version": "1.0.0",
+  "description": "Highlight multiple words or phrases on a webpage, including text inside input and textarea fields.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Multi Word Highlighter"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
